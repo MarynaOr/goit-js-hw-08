@@ -73,7 +73,7 @@ function modalOpen(event){
 //   if(gallery){
 // console.log(images.original);
 // }
-if (!currentItem) {return}
+// if (!currentItem) {return}
 
 const img = currentItem.dataset.source;
 
