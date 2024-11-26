@@ -64,6 +64,32 @@ const images = [
   },
 ];
 const gallery = document.querySelector(".gallery");
+gallery.addEventListener('click', modalOpen)
+
+
+function modalOpen(event){
+  const currentItem = event.target.closest('.gallery-image')
+  event.preventDefault();
+//   if(gallery){
+// console.log(images.original);
+// }
+if (!currentItem) {return}
+
+const img = currentItem.dataset.source;
+
+const instance = basicLightbox.create(`
+  <div class='modal'>
+  <img 
+  class='gallery-image'
+  src='${img}'
+  alt='${currentItem.alt}'
+  >
+  </div>
+ `);
+ 
+ instance.show();
+  
+}
 
 let markup = "";
 for (const image of images)
@@ -84,7 +110,7 @@ for (const image of images)
 
 gallery.innerHTML = markup;
 
-
+// console.log(basicLightbox);
 
 
 
