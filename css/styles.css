@@ -1,0 +1,49 @@
+*,
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 24px 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.gallery-image:hover{
+    cursor: pointer;
+   
+
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.gallery-link {
+  /*  width: calc((100% - 48px) / 3); */
+}
+
+
+
+
+
